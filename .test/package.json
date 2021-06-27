@@ -1,0 +1,27 @@
+{
+  "name": "test-3gpp-specs-in-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsongsong/validate-3gpp-specs-in-json.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gsongsong/validate-3gpp-specs-in-json/issues"
+  },
+  "homepage": "https://github.com/gsongsong/validate-3gpp-specs-in-json#readme",
+  "devDependencies": {
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.12.4"
+  },
+  "dependencies": {
+    "compare-versions": "^3.6.0",
+    "lib3rd": "github:proj3rd/lib3rd#develop"
+  }
+}
