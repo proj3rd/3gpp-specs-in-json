@@ -26,3 +26,4 @@ jobs:
           node dist
           git add directory-listing.json
           git commit -m 'Update directory listing'
+          git push origin master
