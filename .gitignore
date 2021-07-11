@@ -1,0 +1,9 @@
+*.files/
+
+*.asn
+*.asn1
+*.doc
+*.docx
+*.htm
+*.html
+*.txt
