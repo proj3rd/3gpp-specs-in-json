@@ -1,4 +1,5 @@
 *.files/
+*.log
 
 *.asn
 *.asn1
