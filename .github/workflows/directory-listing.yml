@@ -1,0 +1,28 @@
+name: Generate directory listing
+
+on:
+  push:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Configure git
+        run: |
+          git config user.name "Project 3rd Bot"
+          git config user.email "<>"
+      - name: Generate directory listing
+        run: |
+          cd .dir-list
+          npm install
+          node dist
+          git add directory-listing.json
+          git commit -m 'Update directory listing'
