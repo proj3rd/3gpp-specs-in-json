@@ -33,4 +33,4 @@ const seriesList = readdirSync(buildPath())
     return { name: series, children };
   });
 
-writeFileSync("../dir-list.json", JSON.stringify(seriesList, null, 2));
+writeFileSync("../.dir-list.json", JSON.stringify(seriesList, null, 2));

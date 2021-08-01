@@ -25,6 +25,6 @@ jobs:
           npm install
           node dist
           cd ..
-          git add dir-list.json
+          git add .dir-list.json
           git commit -m 'Update directory listing'
           git push origin master

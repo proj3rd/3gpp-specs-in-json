@@ -36,4 +36,4 @@ var seriesList = fs_1.readdirSync(buildPath())
     });
     return { name: series, children: children };
 });
-fs_1.writeFileSync("../dir-list.json", JSON.stringify(seriesList, null, 2));
+fs_1.writeFileSync("../.dir-list.json", JSON.stringify(seriesList, null, 2));
