@@ -15,16 +15,19 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - name: Configure git
-        run: |
-          git config user.name "Project 3rd Bot"
-          git config user.email "<>"
       - name: Generate directory listing
         run: |
           cd .dir-list
           npm install
           node dist
-          cd ..
+      - name: Check if there is any change
+        id: has_changes_action
+        uses: UnicornGlobal/has-changes-action@v1.0.11
+      - name: Push
+        if: steps.has_changes_action.outputs.changed == 1
+        run: |
           git add .dir-list.json
+          git config user.name "Project 3rd Bot"
+          git config user.email "<>"
           git commit -m 'Update directory listing'
           git push origin master
