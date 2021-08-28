@@ -1,4 +1,4 @@
-# 3gpp-specs-injson
+# 3gpp-specs-in-json
 
 3GPP RAN2 and RAN3 specifications in JSON format used in [tool3rd]
 
