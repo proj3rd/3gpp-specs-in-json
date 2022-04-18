@@ -1,16 +1,10 @@
 import assert from "assert";
-import { Modules } from "lib3rd/dist/asn1/classes/modules";
 import { Definitions } from "lib3rd/dist/ran3/classes/definitions";
-
-type TC = {
-  specNumbering: string;
-  type: string;
-  versionFrom?: string;
-  versionTo?: string;
-  func: (def: Modules | Definitions | undefined) => void;
-};
+import { tcListNgap } from "./ngap";
+import { TC } from "./types";
 
 export const tcList: TC[] = [
+  ...tcListNgap,
   {
     specNumbering: '38423', type: 'tabular', versionFrom: '15.2.0',
     func: (def) => {
