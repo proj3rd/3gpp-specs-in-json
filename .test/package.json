@@ -6,6 +6,6 @@
   },
   "dependencies": {
     "compare-versions": "^3.6.0",
-    "lib3rd": "github:proj3rd/lib3rd#develop"
+    "lib3rd": "github:proj3rd/lib3rd-legacy#develop"
   }
 }
