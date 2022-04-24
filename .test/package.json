@@ -2,7 +2,8 @@
   "author": "Seokseong Jeon",
   "devDependencies": {
     "@types/mocha": "^8.2.2",
-    "@types/node": "^15.12.4"
+    "@types/node": "^15.12.4",
+    "typescript": "^4.6.3"
   },
   "dependencies": {
     "compare-versions": "^3.6.0",

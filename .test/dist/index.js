@@ -15,26 +15,26 @@ function isDotfile(filename) {
     return filename.startsWith('.');
 }
 function isDir(filename) {
-    return fs_1.statSync(filename).isDirectory();
+    return (0, fs_1.statSync)(filename).isDirectory();
 }
 function isJson(filename) {
     return filename.endsWith('.json');
 }
 function getDirList(path) {
-    return fs_1.readdirSync(path)
-        .filter(function (filename) { return !isDotfile("" + filename); })
-        .filter(function (filename) { return isDir(path + "/" + filename); });
+    return (0, fs_1.readdirSync)(path)
+        .filter(function (filename) { return !isDotfile("".concat(filename)); })
+        .filter(function (filename) { return isDir("".concat(path, "/").concat(filename)); });
 }
 // [36-series]
 var seriesList = getDirList('.');
 // console.log(seriesList);
 seriesList.forEach(function (series) {
     // [36331]
-    var specList = getDirList("./" + series);
+    var specList = getDirList("./".concat(series));
     // console.log(specList);
     specList.forEach(function (spec) {
         // [36331-g00.asn1.json]
-        var versionList = fs_1.readdirSync("./" + series + "/" + spec)
+        var versionList = (0, fs_1.readdirSync)("./".concat(series, "/").concat(spec))
             .filter(function (filename) { return !isDotfile(filename); })
             .filter(function (filename) { return isJson(filename); });
         // console.log(versionList);
@@ -46,9 +46,9 @@ seriesList.forEach(function (series) {
                 var indexDot = version.substring(indexLastHyphen).indexOf('.');
                 var versionCharacters = version.substring(indexLastHyphen + 1, indexLastHyphen + indexDot);
                 var specNumbering = version.substring(0, indexLastHyphen);
-                var semver = numbering_1.versionFromCharacters(versionCharacters).join(".");
+                var semver = (0, numbering_1.versionFromCharacters)(versionCharacters).join(".");
                 var type = version.includes('asn1') ? 'asn1' : 'tabular';
-                var content = fs_1.readFileSync("./" + series + "/" + spec + "/" + version, 'utf8');
+                var content = (0, fs_1.readFileSync)("./".concat(series, "/").concat(spec, "/").concat(version), 'utf8');
                 var obj = JSON.parse(content);
                 // ASN.1
                 try {
@@ -61,7 +61,7 @@ seriesList.forEach(function (series) {
                 }
                 catch (e) { }
                 it('Validate JSON format', function () {
-                    assert_1.default(def);
+                    (0, assert_1.default)(def);
                 });
                 tc_1.tcList.forEach(function (tc, index) {
                     if (semver === undefined) {
@@ -75,17 +75,17 @@ seriesList.forEach(function (series) {
                     }
                     var versionFrom = tc.versionFrom, versionTo = tc.versionTo;
                     if (versionFrom && versionTo) {
-                        if (compare_versions_1.default(semver, versionFrom) < 0 && compare_versions_1.default(versionTo, semver) < 0) {
+                        if ((0, compare_versions_1.default)(semver, versionFrom) < 0 && (0, compare_versions_1.default)(versionTo, semver) < 0) {
                             return;
                         }
                     }
                     else if (versionFrom) {
-                        if (compare_versions_1.default(semver, versionFrom) < 0) {
+                        if ((0, compare_versions_1.default)(semver, versionFrom) < 0) {
                             return;
                         }
                     }
                     else if (versionTo) {
-                        if (compare_versions_1.default(versionTo, semver) < 0) {
+                        if ((0, compare_versions_1.default)(versionTo, semver) < 0) {
                             return;
                         }
                     }
