@@ -22,9 +22,10 @@ jobs:
           node dist
       - name: Check if there is any change
         id: has_changes_action
-        uses: UnicornGlobal/has-changes-action@v1.0.11
+#         uses: UnicornGlobal/has-changes-action@v1.0.11
+        run: echo "::set-output name=changed::$(git status --porcelain | wc -l)"
       - name: Push
-        if: steps.has_changes_action.outputs.changed == 1
+        if: steps.has_changes_action.outputs.changed != 0
         run: |
           git add .dir-list.json
           git config user.name "Project 3rd Bot"
