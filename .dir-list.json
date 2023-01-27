@@ -35,9 +35,11 @@
           "36331-g80.asn1.json",
           "36331-g90.asn1.json",
           "36331-ga0.asn1.json",
+          "36331-gb0.asn1.json",
           "36331-h00.asn1.json",
           "36331-h10.asn1.json",
-          "36331-h20.asn1.json"
+          "36331-h20.asn1.json",
+          "36331-h30.asn1.json"
         ]
       },
       {
@@ -95,7 +97,9 @@
           "36413-h10.asn1.json",
           "36413-h10.tabular.json",
           "36413-h20.asn1.json",
-          "36413-h20.tabular.json"
+          "36413-h20.tabular.json",
+          "36413-h30.asn1.json",
+          "36413-h30.tabular.json"
         ]
       },
       {
@@ -156,7 +160,9 @@
           "36423-h10.asn1.json",
           "36423-h10.tabular.json",
           "36423-h20.asn1.json",
-          "36423-h20.tabular.json"
+          "36423-h20.tabular.json",
+          "36423-h30.asn1.json",
+          "36423-h30.tabular.json"
         ]
       }
     ]
@@ -179,9 +185,11 @@
           "37355-g60.asn1.json",
           "37355-g70.asn1.json",
           "37355-g80.asn1.json",
+          "37355-g90.asn1.json",
           "37355-h00.asn1.json",
           "37355-h10.asn1.json",
-          "37355-h20.asn1.json"
+          "37355-h20.asn1.json",
+          "37355-h30.asn1.json"
         ]
       },
       {
@@ -192,7 +200,9 @@
           "37483-h10.asn1.json",
           "37483-h10.tabular.json",
           "37483-h20.asn1.json",
-          "37483-h20.tabular.json"
+          "37483-h20.tabular.json",
+          "37483-h30.asn1.json",
+          "37483-h30.tabular.json"
         ]
       }
     ]
@@ -230,9 +240,11 @@
           "38331-g80.asn1.json",
           "38331-g90.asn1.json",
           "38331-ga0.asn1.json",
+          "38331-gb0.asn1.json",
           "38331-h00.asn1.json",
           "38331-h10.asn1.json",
-          "38331-h20.asn1.json"
+          "38331-h20.asn1.json",
+          "38331-h30.asn1.json"
         ]
       },
       {
@@ -295,7 +307,9 @@
           "38413-h11.asn1.json",
           "38413-h11.tabular.json",
           "38413-h20.asn1.json",
-          "38413-h20.tabular.json"
+          "38413-h20.tabular.json",
+          "38413-h30.asn1.json",
+          "38413-h30.tabular.json"
         ]
       },
       {
@@ -357,12 +371,16 @@
           "38423-ga0.tabular.json",
           "38423-gb0.asn1.json",
           "38423-gb0.tabular.json",
+          "38423-gc0.asn1.json",
+          "38423-gc0.tabular.json",
           "38423-h00.asn1.json",
           "38423-h00.tabular.json",
           "38423-h10.asn1.json",
           "38423-h10.tabular.json",
           "38423-h20.asn1.json",
-          "38423-h20.tabular.json"
+          "38423-h20.tabular.json",
+          "38423-h30.asn1.json",
+          "38423-h30.tabular.json"
         ]
       },
       {
@@ -398,12 +416,16 @@
           "38455-g81.tabular.json",
           "38455-g90.asn1.json",
           "38455-g90.tabular.json",
+          "38455-ga0.asn1.json",
+          "38455-ga0.tabular.json",
           "38455-h00.asn1.json",
           "38455-h00.tabular.json",
           "38455-h11.asn1.json",
           "38455-h11.tabular.json",
           "38455-h20.asn1.json",
-          "38455-h20.tabular.json"
+          "38455-h20.tabular.json",
+          "38455-h30.asn1.json",
+          "38455-h30.tabular.json"
         ]
       },
       {
@@ -454,7 +476,9 @@
           "38463-ga0.asn1.json",
           "38463-ga0.tabular.json",
           "38463-gb0.asn1.json",
-          "38463-gb0.tabular.json"
+          "38463-gb0.tabular.json",
+          "38463-gc0.asn1.json",
+          "38463-gc0.tabular.json"
         ]
       },
       {
@@ -519,12 +543,16 @@
           "38473-ga0.tabular.json",
           "38473-gb0.asn1.json",
           "38473-gb0.tabular.json",
+          "38473-gc0.asn1.json",
+          "38473-gc0.tabular.json",
           "38473-h00.asn1.json",
           "38473-h00.tabular.json",
           "38473-h10.asn1.json",
           "38473-h10.tabular.json",
           "38473-h20.asn1.json",
-          "38473-h20.tabular.json"
+          "38473-h20.tabular.json",
+          "38473-h30.asn1.json",
+          "38473-h30.tabular.json"
         ]
       }
     ]
