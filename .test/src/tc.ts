@@ -2,26 +2,11 @@ import assert from "assert";
 import { Definitions } from "lib3rd/dist/ran3/classes/definitions";
 import { tcListNgap } from "./ngap";
 import { TC } from "./types";
+import { tcListXnap } from "./xnap";
 
 export const tcList: TC[] = [
   ...tcListNgap,
-  {
-    specNumbering: '38423', type: 'tabular', versionFrom: '15.2.0',
-    func: (def) => {
-      if (!(def instanceof Definitions)) { return ; }
-      it('SN UL PDCP UP TNL Information of PDU Session Resource Setup Response Info - SN terminated should refer 9.2.3.76', function() {
-        const defFound = def.findDefinition('9.2.1.6');
-        assert(defFound);
-        const elemFound = defFound.elementList.find((elem) => {
-          const { name } = elem;
-          return name === 'SN UL PDCP UP TNL Information';
-        });
-        assert(elemFound);
-        const tokenList = elemFound.reference.trim().split(' ');
-        assert(tokenList.includes('9.2.3.76'));
-      });
-    },
-  },
+  ...tcListXnap,
   {
     specNumbering: '38455', type: 'tabular', versionFrom: '16.1.0',
     func: (def) => {
