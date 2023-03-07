@@ -16,26 +16,8 @@ exports.tcList = void 0;
 var assert_1 = __importDefault(require("assert"));
 var definitions_1 = require("lib3rd/dist/ran3/classes/definitions");
 var ngap_1 = require("./ngap");
-exports.tcList = __spreadArray(__spreadArray([], ngap_1.tcListNgap, true), [
-    {
-        specNumbering: '38423', type: 'tabular', versionFrom: '15.2.0',
-        func: function (def) {
-            if (!(def instanceof definitions_1.Definitions)) {
-                return;
-            }
-            it('SN UL PDCP UP TNL Information of PDU Session Resource Setup Response Info - SN terminated should refer 9.2.3.76', function () {
-                var defFound = def.findDefinition('9.2.1.6');
-                (0, assert_1.default)(defFound);
-                var elemFound = defFound.elementList.find(function (elem) {
-                    var name = elem.name;
-                    return name === 'SN UL PDCP UP TNL Information';
-                });
-                (0, assert_1.default)(elemFound);
-                var tokenList = elemFound.reference.trim().split(' ');
-                (0, assert_1.default)(tokenList.includes('9.2.3.76'));
-            });
-        },
-    },
+var xnap_1 = require("./xnap");
+exports.tcList = __spreadArray(__spreadArray(__spreadArray([], ngap_1.tcListNgap, true), xnap_1.tcListXnap, true), [
     {
         specNumbering: '38455', type: 'tabular', versionFrom: '16.1.0',
         func: function (def) {
