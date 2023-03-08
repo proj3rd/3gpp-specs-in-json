@@ -1,4 +1,4 @@
-import { assert } from "console";
+import assert from "assert";
 import { Definitions } from "lib3rd/dist/ran3/classes/definitions";
 import { TC } from "./types";
 
