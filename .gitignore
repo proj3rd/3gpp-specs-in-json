@@ -7,4 +7,5 @@
 *.docx
 *.htm
 *.html
+!index.html
 *.txt
