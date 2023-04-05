@@ -1,4 +1,4 @@
-import { existsSync, writeFileSync } from "fs";
+import { existsSync, readFileSync, writeFileSync } from "fs";
 import { getSpec } from "get-3gpp-spec/dist/lib";
 import { parse, resolve } from "path";
 
@@ -72,10 +72,21 @@ async function main() {
       }
     );
   }
-  writeFileSync(
-    resolve(__dirname, "../support-status.json"),
-    JSON.stringify(supportStatusList)
+  const template = readFileSync(
+    resolve(__dirname, "../template/index.html"),
+    "utf8"
   );
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = date.getMonth() + 1;
+  const dayOfMonth = date.getDate();
+  const rendered = template
+    .replace("last-update-placeholder", `${year}-${month}-${dayOfMonth}`)
+    .replace(
+      "support-status-list-placeholder",
+      JSON.stringify(supportStatusList)
+    );
+  writeFileSync(resolve(__dirname, "../../index.html"), rendered);
 }
 
 main();

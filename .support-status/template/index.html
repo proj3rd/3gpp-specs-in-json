@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3gpp-specs-in-json</title>
+    <style>
+      .tags:not(:last-child) {
+        margin-bottom: 0rem !important;
+      }
+      .tag {
+        font-family: monospace !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <div>Last update: last-update-placeholder</div>
+    <div>
+      <b>Legends</b>
+      <div class="tags has-addons">
+        <span class="tag">version</span>
+        <span class="tag is-info">asn1</span>
+        <span class="tag is-success">tab</span>
+        <span class="tag is-white">Both ASN.1 and tabular are supported</span>
+      </div>
+      <div class="tags has-addons">
+        <span class="tag">version</span>
+        <span class="tag is-info">asn1</span>
+        <span class="tag">tab</span>
+        <span class="tag is-white">Only ASN.1 is supported</span>
+      </div>
+      <div class="tags has-addons">
+        <span class="tag">version</span>
+        <span class="tag">asn1</span>
+        <span class="tag is-success">tab</span>
+        <span class="tag is-white">Only tabular is supported</span>
+      </div>
+      <div class="tags has-addons">
+        <span class="tag">version</span>
+        <span class="tag">asn1</span>
+        <span class="tag">tab</span>
+        <span class="tag is-white">None of both is supported</span>
+      </div>
+    </div>
+    <table class="table"></table>
+    <script>
+      const supportStatusList = JSON.parse(`support-status-list-placeholder`);
+
+      const specNumberList = Array.from(
+        new Set(supportStatusList.map(({ specNumber }) => specNumber))
+      );
+      specNumberList.sort();
+
+      const dateList = Array.from(
+        new Set(supportStatusList.map(({ date }) => date))
+      );
+      dateList.sort().reverse();
+
+      const table = document.querySelector("table");
+
+      const thead = document.createElement("thead");
+      table.appendChild(thead);
+
+      const headerRow = document.createElement("tr");
+      thead.appendChild(headerRow);
+
+      const dummyHeaderCell = document.createElement("th");
+      headerRow.appendChild(dummyHeaderCell);
+
+      specNumberList.forEach((specNumber) => {
+        const headerCell = document.createElement("th");
+        headerCell.style.width = "250px";
+        headerCell.textContent = specNumber;
+        headerRow.appendChild(headerCell);
+      });
+
+      const tbody = document.createElement("tbody");
+      table.appendChild(tbody);
+
+      dateList.forEach((date) => {
+        const row = document.createElement("tr");
+        tbody.appendChild(row);
+
+        const dateCell = document.createElement("th");
+        dateCell.textContent = date;
+        row.appendChild(dateCell);
+
+        specNumberList.forEach((specNumber) => {
+          const cell = document.createElement("td");
+          row.appendChild(cell);
+
+          const filteredList = supportStatusList.filter(
+            (supportStatus) =>
+              supportStatus.date === date &&
+              supportStatus.specNumber === specNumber
+          );
+
+          filteredList.forEach(({ version, asn1, tabular }) => {
+            const div = document.createElement("div");
+            div.className = "tags has-addons";
+            cell.appendChild(div);
+
+            const spanVersion = document.createElement("span");
+            spanVersion.className = "tag";
+            const indexHyphen = version.indexOf("-");
+            spanVersion.textContent = version.substring(indexHyphen + 1);
+            div.appendChild(spanVersion);
+
+            const spanAsn1 = document.createElement("span");
+            spanAsn1.textContent = "asn1";
+            if (asn1) {
+              spanAsn1.className = "tag is-info";
+            } else {
+              spanAsn1.className = "tag";
+            }
+            div.appendChild(spanAsn1);
+
+            const spanTab = document.createElement("span");
+            spanTab.textContent = "tab";
+            if (tabular) {
+              spanTab.className = "tag is-success";
+            } else {
+              spanTab.classList = "tag";
+            }
+            div.appendChild(spanTab);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
