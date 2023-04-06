@@ -31,4 +31,4 @@ jobs:
           git config user.name "Project 3rd Bot"
           git config user.email "<>"
           git commit -m 'Update directory listing'
-          git push origin master
+          git push origin main
