@@ -1,0 +1,31 @@
+name: Generate directory listing
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Generate directory listing
+        run: |
+          cd .support-status
+          npm install
+          node dist
+      - name: Check if there is any change
+        id: has_changes_action
+#         uses: UnicornGlobal/has-changes-action@v1.0.11
+        run: echo "::set-output name=changed::$(git status --porcelain | wc -l)"
+      - name: Push
+        if: steps.has_changes_action.outputs.changed != 0
+        run: |
+          git add .dir-list.json
+          git config user.name "Project 3rd Bot"
+          git config user.email "<>"
+          git commit -m 'Update support status'
+          git push origin master
