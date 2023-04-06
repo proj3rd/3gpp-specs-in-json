@@ -24,8 +24,8 @@ jobs:
       - name: Push
         if: steps.has_changes_action.outputs.changed != 0
         run: |
-          git add .dir-list.json
+          git add ../index.html
           git config user.name "Project 3rd Bot"
           git config user.email "<>"
           git commit -m 'Update support status'
-          git push origin master
+          git push origin main
