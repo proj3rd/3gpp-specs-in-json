@@ -170,6 +170,7 @@
           "36423-h20.tabular.json",
           "36423-h30.asn1.json",
           "36423-h30.tabular.json",
+          "36423-h40.asn1.json",
           "36423-h40.tabular.json"
         ]
       }
@@ -391,6 +392,7 @@
           "38423-gb0.tabular.json",
           "38423-gc0.asn1.json",
           "38423-gc0.tabular.json",
+          "38423-gd0.asn1.json",
           "38423-gd0.tabular.json",
           "38423-h00.asn1.json",
           "38423-h00.tabular.json",
@@ -400,7 +402,8 @@
           "38423-h20.tabular.json",
           "38423-h30.asn1.json",
           "38423-h30.tabular.json",
-          "38423-h40.asn1.json"
+          "38423-h40.asn1.json",
+          "38423-h40.tabular.json"
         ]
       },
       {
@@ -448,6 +451,7 @@
           "38455-h20.tabular.json",
           "38455-h30.asn1.json",
           "38455-h30.tabular.json",
+          "38455-h40.asn1.json",
           "38455-h40.tabular.json"
         ]
       },
