@@ -46,7 +46,9 @@
           "36331-h50.asn1.json",
           "36331-h60.asn1.json",
           "36331-h70.asn1.json",
-          "36331-i00.asn1.json"
+          "36331-h80.asn1.json",
+          "36331-i00.asn1.json",
+          "36331-i10.asn1.json"
         ]
       },
       {
@@ -115,8 +117,12 @@
           "36413-h40.tabular.json",
           "36413-h50.asn1.json",
           "36413-h50.tabular.json",
+          "36413-h60.asn1.json",
+          "36413-h60.tabular.json",
           "36413-i00.asn1.json",
           "36413-i00.tabular.json",
+          "36413-i10.asn1.json",
+          "36413-i10.tabular.json",
           "36423-h40.asn1.json"
         ]
       },
@@ -191,8 +197,12 @@
           "36423-h50.tabular.json",
           "36423-h60.asn1.json",
           "36423-h60.tabular.json",
+          "36423-h70.asn1.json",
+          "36423-h70.tabular.json",
           "36423-i00.asn1.json",
-          "36423-i00.tabular.json"
+          "36423-i00.tabular.json",
+          "36423-i10.asn1.json",
+          "36423-i10.tabular.json"
         ]
       }
     ]
@@ -227,7 +237,9 @@
           "37355-h50.asn1.json",
           "37355-h60.asn1.json",
           "37355-h70.asn1.json",
-          "37355-i00.asn1.json"
+          "37355-h80.asn1.json",
+          "37355-i00.asn1.json",
+          "37355-i10.asn1.json"
         ]
       },
       {
@@ -249,8 +261,12 @@
           "37483-h60.tabular.json",
           "37483-h70.asn1.json",
           "37483-h70.tabular.json",
+          "37483-h80.asn1.json",
+          "37483-h80.tabular.json",
           "37483-i00.asn1.json",
-          "37483-i00.tabular.json"
+          "37483-i00.tabular.json",
+          "37483-i10.asn1.json",
+          "37483-i10.tabular.json"
         ]
       }
     ]
@@ -300,7 +316,9 @@
           "38331-h50.asn1.json",
           "38331-h60.asn1.json",
           "38331-h70.asn1.json",
-          "38331-i00.asn1.json"
+          "38331-h80.asn1.json",
+          "38331-i00.asn1.json",
+          "38331-i10.asn1.json"
         ]
       },
       {
@@ -380,8 +398,12 @@
           "38413-h60.tabular.json",
           "38413-h70.asn1.json",
           "38413-h70.tabular.json",
+          "38413-h80.asn1.json",
+          "38413-h80.tabular.json",
           "38413-i00.asn1.json",
-          "38413-i00.tabular.json"
+          "38413-i00.tabular.json",
+          "38413-i10.asn1.json",
+          "38413-i10.tabular.json"
         ]
       },
       {
@@ -467,8 +489,12 @@
           "38423-h60.tabular.json",
           "38423-h70.asn1.json",
           "38423-h70.tabular.json",
+          "38423-h80.asn1.json",
+          "38423-h80.tabular.json",
           "38423-i00.asn1.json",
-          "38423-i00.tabular.json"
+          "38423-i00.tabular.json",
+          "38423-i10.asn1.json",
+          "38423-i10.tabular.json"
         ]
       },
       {
@@ -524,8 +550,12 @@
           "38455-h50.tabular.json",
           "38455-h60.asn1.json",
           "38455-h60.tabular.json",
+          "38455-h70.asn1.json",
+          "38455-h70.tabular.json",
           "38455-i00.asn1.json",
-          "38455-i00.tabular.json"
+          "38455-i00.tabular.json",
+          "38455-i10.asn1.json",
+          "38455-i10.tabular.json"
         ]
       },
       {
@@ -675,8 +705,12 @@
           "38473-h60.tabular.json",
           "38473-h70.asn1.json",
           "38473-h70.tabular.json",
+          "38473-h80.asn1.json",
+          "38473-h80.tabular.json",
           "38473-i00.asn1.json",
-          "38473-i00.tabular.json"
+          "38473-i00.tabular.json",
+          "38473-i10.asn1.json",
+          "38473-i10.tabular.json"
         ]
       }
     ]
