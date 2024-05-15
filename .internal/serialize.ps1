@@ -1,3 +1,4 @@
+# TODO: Integrate into suite3rd
 rm -rf lib3rd
 git clone https://github.com/proj3rd/lib3rd
 cd lib3rd
@@ -24,12 +25,14 @@ Foreach ($line in $lines) {
     # Serialize ASN.1
     $asn1_log = "$base.asn1.log"
     if ($tokens[3] -eq "asn1" -or $tokens[3] -eq "both") {
+        # TODO: Integrate into suite3rd
         cd lib3rd
         npm run asn1 serialize $file 2>$asn1_log
     }
     # Serialize RAN3 tabular
     $tabular_log = "$base.tabular.log"
     if ($tokens[3] -eq "tabular" -or $tokens[3] -eq "both") {
+        # TODO: Integrate into suite3rd
         npx proj3rd/serialize-ran3-tabular $docx 2>$tabular_log
     }
 }
