@@ -1,7 +1,6 @@
 name: Update support status
 
 on:
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
