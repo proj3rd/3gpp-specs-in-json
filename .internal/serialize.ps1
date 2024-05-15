@@ -1,3 +1,9 @@
+rm -rf lib3rd
+git clone https://github.com/proj3rd/lib3rd
+cd lib3rd
+npm install
+cd ..
+
 $lines = Get-Content ./serialize.config
 Foreach ($line in $lines) {
     Write-Output $line
@@ -15,8 +21,11 @@ Foreach ($line in $lines) {
     # Extract ASN.1
     $asn1 = "$base.asn1"
     npx -y extract-asn1 --exclude-non-tag-comment $txt > $asn1
+    # Serialize ASN.1
+    $asn1_log = "$base.asn1.log"
     if ($tokens[3] -eq "asn1" -or $tokens[3] -eq "both") {
-        # TODO: Serialize ASN.1
+        cd lib3rd
+        npm run asn1 serialize $file 2>$asn1_log
     }
     # Serialize RAN3 tabular
     $tabular_log = "$base.tabular.log"
