@@ -52,13 +52,13 @@
           "36331-i20.asn1.json",
           "36331-i31.asn1.json",
           "36331-i40.asn1.json",
-          "36331-i50.asn1.json"
+          "36331-i50.asn1.json",
+          "36331-i60.asn1.json"
         ]
       },
       {
         "name": "36413",
         "children": [
-          ".DS_Store",
           "36413-f00.asn1.json",
           "36413-f00.tabular.json",
           "36413-f10.asn1.json",
@@ -137,7 +137,6 @@
       {
         "name": "36423",
         "children": [
-          ".DS_Store",
           "36423-f00.asn1.json",
           "36423-f00.tabular.json",
           "36423-f10.asn1.json",
@@ -257,7 +256,8 @@
           "37355-i10.asn1.json",
           "37355-i20.asn1.json",
           "37355-i30.asn1.json",
-          "37355-i40.asn1.json"
+          "37355-i40.asn1.json",
+          "37355-i50.asn1.json"
         ]
       },
       {
@@ -290,7 +290,9 @@
           "37483-i30.asn1.json",
           "37483-i30.tabular.json",
           "37483-i41.asn1.json",
-          "37483-i41.tabular.json"
+          "37483-i41.tabular.json",
+          "37483-i50.asn1.json",
+          "37483-i50.tabular.json"
         ]
       }
     ]
@@ -346,7 +348,8 @@
           "38331-i20.asn1.json",
           "38331-i30.asn1.json",
           "38331-i40.asn1.json",
-          "38331-i51.asn1.json"
+          "38331-i51.asn1.json",
+          "38331-i60.asn1.json"
         ]
       },
       {
@@ -439,13 +442,14 @@
           "38413-i40.asn1.json",
           "38413-i40.tabular.json",
           "38413-i50.asn1.json",
-          "38413-i50.tabular.json"
+          "38413-i50.tabular.json",
+          "38413-i60.asn1.json",
+          "38413-i60.tabular.json"
         ]
       },
       {
         "name": "38423",
         "children": [
-          ".DS_Store",
           "38423-f00.asn1.json",
           "38423-f00.tabular.json",
           "38423-f10.asn1.json",
@@ -539,7 +543,9 @@
           "38423-i40.asn1.json",
           "38423-i40.tabular.json",
           "38423-i50.asn1.json",
-          "38423-i50.tabular.json"
+          "38423-i50.tabular.json",
+          "38423-i60.asn1.json",
+          "38423-i60.tabular.json"
         ]
       },
       {
@@ -608,7 +614,9 @@
           "38455-i40.asn1.json",
           "38455-i40.tabular.json",
           "38455-i50.asn1.json",
-          "38455-i50.tabular.json"
+          "38455-i50.tabular.json",
+          "38455-i60.asn1.json",
+          "38455-i60.tabular.json"
         ]
       },
       {
@@ -771,34 +779,9 @@
           "38473-i40.asn1.json",
           "38473-i40.tabular.json",
           "38473-i50.asn1.json",
-          "38473-i50.tabular.json"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "updater",
-    "children": [
-      {
-        "name": "lib3rd",
-        "children": [
-          ".eslintrc.js",
-          ".git",
-          ".github",
-          ".gitignore",
-          ".prettierignore",
-          ".prettierrc.json",
-          ".vscode",
-          "README.md",
-          "dist",
-          "docs",
-          "log",
-          "node_modules",
-          "package-lock.json",
-          "package.json",
-          "resources",
-          "src",
-          "tsconfig.json"
+          "38473-i50.tabular.json",
+          "38473-i60.asn1.json",
+          "38473-i60.tabular.json"
         ]
       }
     ]
