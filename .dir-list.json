@@ -808,32 +808,5 @@
         ]
       }
     ]
-  },
-  {
-    "name": "updater",
-    "children": [
-      {
-        "name": "lib3rd",
-        "children": [
-          ".eslintrc.js",
-          ".git",
-          ".github",
-          ".gitignore",
-          ".prettierignore",
-          ".prettierrc.json",
-          ".vscode",
-          "README.md",
-          "dist",
-          "docs",
-          "log",
-          "node_modules",
-          "package-lock.json",
-          "package.json",
-          "resources",
-          "src",
-          "tsconfig.json"
-        ]
-      }
-    ]
   }
 ]
