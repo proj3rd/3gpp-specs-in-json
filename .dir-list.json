@@ -5,7 +5,6 @@
       {
         "name": "36331",
         "children": [
-          ".DS_Store",
           "36331-f01.asn1.json",
           "36331-f10.asn1.json",
           "36331-f21.asn1.json",
