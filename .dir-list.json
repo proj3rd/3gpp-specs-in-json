@@ -5,7 +5,6 @@
       {
         "name": "36331",
         "children": [
-          ".DS_Store",
           "36331-f01.asn1.json",
           "36331-f10.asn1.json",
           "36331-f21.asn1.json",
@@ -55,13 +54,13 @@
           "36331-i40.asn1.json",
           "36331-i50.asn1.json",
           "36331-i60.asn1.json",
-          "36331-j00.asn1.json"
+          "36331-j00.asn1.json",
+          "36331-j10,asn1.json"
         ]
       },
       {
         "name": "36413",
         "children": [
-          ".DS_Store",
           "36413-f00.asn1.json",
           "36413-f00.tabular.json",
           "36413-f10.asn1.json",
@@ -144,7 +143,6 @@
       {
         "name": "36423",
         "children": [
-          ".DS_Store",
           "36423-f00.asn1.json",
           "36423-f00.tabular.json",
           "36423-f10.asn1.json",
@@ -239,7 +237,6 @@
       {
         "name": "37355",
         "children": [
-          ".DS_Store",
           "37355-f00.asn1.json",
           "37355-f10.asn1.json",
           "37355-f20.asn1.json",
@@ -271,7 +268,8 @@
           "37355-i30.asn1.json",
           "37355-i40.asn1.json",
           "37355-i50.asn1.json",
-          "37355-j00.asn1.json"
+          "37355-j00.asn1.json",
+          "37355-j10.asn1.json"
         ]
       },
       {
@@ -321,7 +319,6 @@
       {
         "name": "38331",
         "children": [
-          ".DS_Store",
           "38331-f10.asn1.json",
           "38331-f21.asn1.json",
           "38331-f30.asn1.json",
@@ -474,7 +471,6 @@
       {
         "name": "38423",
         "children": [
-          ".DS_Store",
           "38423-f00.asn1.json",
           "38423-f00.tabular.json",
           "38423-f10.asn1.json",
