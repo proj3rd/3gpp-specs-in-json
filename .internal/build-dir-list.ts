@@ -22,7 +22,8 @@ const seriesList = readdirSync(path())
     const children = readdirSync(path(series))
       .filter((spec) => isSpecDir(series, spec))
       .map((spec) => {
-        const children = readdirSync(path(series, spec));
+        const children = readdirSync(path(series, spec))
+          .filter((child) => !child.startsWith("."));
         return { name: spec, children };
       });
     return { name: series, children };
