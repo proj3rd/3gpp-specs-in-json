@@ -1,6 +1,6 @@
 SPECS = 36.331 36.413 36.423 37.355 37.483 38.331 38.413 38.423 38.455 38.463 38.473
 
-.PHONY: check-date get text extract-asn1 serialize-asn1 serialize-ran3 move all clean
+.PHONY: check-date get text extract-asn1 serialize-asn1 serialize-ran3 move listings all clean
 
 check-date:
 ifndef DATE
@@ -69,7 +69,10 @@ move:
 		mv "$$file" "../../$${series_num}-series/$${prefix}/"; \
 	done
 
-all: get text extract-asn1 serialize-asn1 serialize-ran3 move
+listings:
+	@npm run build-dir-list
+
+all: get text extract-asn1 serialize-asn1 serialize-ran3 move listings
 
 clean:
 	@rm -rf *.zip *.docx *.txt *.asn1 *.json *.log *.error

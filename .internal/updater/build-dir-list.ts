@@ -1,7 +1,7 @@
 import { readdirSync, statSync, writeFileSync } from "fs";
 import { resolve } from "path";
 
-const BASE_DIR = "..";
+const BASE_DIR = "../..";
 
 function path(...dirList: string[]): string {
   return resolve(BASE_DIR, ...dirList);
