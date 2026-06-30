@@ -1,24 +1,16 @@
 SPECS = 36.331 36.413 36.423 37.355 37.483 38.331 38.413 38.423 38.455 38.463 38.473
 
-# 'get' 다음에 오는 두 번째 인자를 date 변수로 저장
-# (words와 word 함수를 이용해 인자 위치를 잡습니다)
-ifeq ($(firstword $(MAKECMDGOALS)), get)
-DATE_ARG := $(word 2, $(MAKECMDGOALS))
-# 두 번째 인자가 존재한다면, Make가 해당 인자를 타겟으로 인식해 에러내는 것을 방지
-ifneq ($(DATE_ARG),)
-$(eval $(DATE_ARG):;@:)
-endif
+.PHONY: check-date get text extract-asn1 serialize-asn1 serialize-ran3
+
+check-date:
+ifndef DATE
+	$(error Environment variable DATE=YYYY-DD must be given)
 endif
 
-.PHONY: get text extract-asn1 serialize-asn1 serialize-ran3
-
-get:
-ifeq ($(DATE_ARG),)
-	$(error Missing YYYY-MM. Usage: make get 2026-06)
-endif
+get: check-date
 	@for spec in $(SPECS); do \
 		echo "Downloading $$spec..."; \
-		get-3gpp-spec "$$spec" -d "$(DATE_ARG)"; \
+		get-3gpp-spec "$$spec" -d "$(DATE)"; \
 	done
 	@for file in ./*.zip; do \
 		unzip -o "$$file"; \
